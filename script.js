@@ -1,12 +1,11 @@
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const Turtle = document.getElementById('Turtle');
     const boxWidth = Turtle.offsetWidth;
     const boxHeight = Turtle.offsetHeight;
     const range = 20;
 
-    let boxX = window.innerWidth/2 - boxWidth/2;
+    let boxX = window.innerWidth/2 - boxWidth/2 +20;
     let boxY = window.innerHeight/2 - boxHeight/2;
 
     Turtle.style.left = boxX + 'px';
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         Turtle.style.left = boxX + 'px';
-        
         Turtle.style.top = boxY + 'px';
     });
 });
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxHeight = rabbit.offsetHeight;
     const range = 20;
 
-    let boxX = window.innerWidth/2 - boxWidth/2+20;
+    let boxX = window.innerWidth/2 - boxWidth/2;
     let boxY = window.innerHeight/2 - boxHeight/2;
 
     rabbit.style.left = boxX + 'px';
@@ -66,11 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         rabbit.style.left = boxX + 'px';
-        
         rabbit.style.top = boxY + 'px';
     });
-
-    
-
 });
-
